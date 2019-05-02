@@ -86,7 +86,7 @@ echo "addnode=201.148.120.149" >> /root/.dashplatinum/dashplatinum.conf
 echo "addnode=201.148.120.30" >> /root/.dashplatinum/dashplatinum.conf
 echo "addnode=138.68.85.71" >> /root/.dashplatinum/dashplatinum.conf
 echo "addnode=209.97.134.255" >> /root/.dashplatinum/dashplatinum.conf
-echo "addnode=159.203.9.176" >> /root/.dashplatinum/dashplatinum.conf
+echo "addnode=104.248.49.195" >> /root/.dashplatinum/dashplatinum.conf
 echo -e "${GREEN}Completion: 99%...${NC}"
 cd /root
 echo -e "${GREEN}Completion: 100%...${NC}"
