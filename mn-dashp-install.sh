@@ -80,14 +80,13 @@ echo "maxconnections=250" >> /root/.dashplatinum/dashplatinum.conf
 echo "masternode=1" >> /root/.dashplatinum/dashplatinum.conf
 echo "masternodeaddr$IP:22583" >> /root/.dashplatinum/dashplatinum.conf
 echo "masternodeprivkey=$KEY" >> /root/.dashplatinum/dashplatinum.conf
-echo "addnode=157.230.223.211" >> /root/.dashplatinum/dashplatinum.conf
-echo "addnode=159.65.240.99" >> /root/.dashplatinum/dashplatinum.conf
-echo "addnode=157.230.132.231" >> /root/.dashplatinum/dashplatinum.conf
-echo "addnode=178.62.195.103" >> /root/.dashplatinum/dashplatinum.conf
+echo "addnode=177.125.121.229" >> /root/.dashplatinum/dashplatinum.conf
+echo "addnode=177.125.121.228" >> /root/.dashplatinum/dashplatinum.conf
+echo "addnode=201.148.120.149" >> /root/.dashplatinum/dashplatinum.conf
+echo "addnode=201.148.120.30" >> /root/.dashplatinum/dashplatinum.conf
 echo "addnode=138.68.85.71" >> /root/.dashplatinum/dashplatinum.conf
 echo "addnode=209.97.134.255" >> /root/.dashplatinum/dashplatinum.conf
 echo "addnode=159.203.9.176" >> /root/.dashplatinum/dashplatinum.conf
-echo "addnode=177.125.123.238" >> /root/.dashplatinum/dashplatinum.conf
 echo -e "${GREEN}Completion: 99%...${NC}"
 cd /root
 echo -e "${GREEN}Completion: 100%...${NC}"
