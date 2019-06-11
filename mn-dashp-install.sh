@@ -24,9 +24,9 @@ sleep 2
 sudo apt-get update -y &>/dev/null
 sudo apt-get upgrade -y &>/dev/null
 echo -e "${GREEN}Completion: 2%...${NC}"
-sudo wget http://release.dashplatinum.org/masternodeinstall.tar.gz
+sudo wget https://github.com/dashplatinum-org/dashplatinum/releases/download/V2.1.1.1/dashplatinum-linux-daemon-2.1.1.tar.gz
 echo -e "${GREEN}Completion: 3%...${NC}"
-sudo tar -xzvf masternodeinstall.tar.gz
+sudo tar -xzvf dashplatinum-linux-daemon-2.1.1.tar.gz
 echo -e "${GREEN}Completion: 5%...${NC}"
 sudo apt-get install libboost-all-dev libevent-dev software-properties-common -y &>/dev/null
 sudo add-apt-repository ppa:bitcoin/bitcoin -y &>/dev/null
@@ -63,8 +63,8 @@ sudo ufw logging on &>/dev/null
 echo "y" | sudo ufw enable &>/dev/null
 echo -e "${GREEN}Completion: 90%...${NC}"
 sleep 2
-sudo chmod +x /root/masternodeinstall/dashplatinumd /root/masternodeinstall/dashplatinum-cli
-sudo mv /root/masternodeinstall/dashplatinumd /root/masternodeinstall/dashplatinum-cli /usr/local/bin
+sudo chmod +x /root/dashplatinum-linux-daemon-2.1.1/dashplatinumd /root/dashplatinum-linux-daemon-2.1.1/dashplatinum-cli
+sudo mv /root/dashplatinum-linux-daemon-2.1.1/dashplatinumd /root/dashplatinum-linux-daemon-2.1.1/dashplatinum-cli /usr/local/bin
 sleep 2
 sudo mkdir /root/.dashplatinum
 echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` > /root/.dashplatinum/dashplatinum.conf
@@ -92,6 +92,6 @@ cd /root
 echo -e "${GREEN}Completion: 100%...${NC}"
 echo -e "Thank you for installing the dashplatinum daemon. Please configure you masternode.conf in windows ${RED}NEXT${NC} step. start alias"
 dashplatinumd -datadir=/root/.dashplatinum
-rm -rf /root/masternodeinstall.tar.gz &>/dev/null
-rm -rf /root/masternodeinstall &>/dev/null
+rm -rf /root/dashplatinum-linux-daemon-2.1.1.tar.gz &>/dev/null
+rm -rf /root/dashplatinum-linux-daemon-2.1.1 &>/dev/null
 echo -e "${GREEN}you masternode is installed and runing%...${NC}"
